@@ -8,7 +8,7 @@
     "preview": "npx @opennextjs/cloudflare build && npx wrangler pages dev .vercel/output/static --compatibility-date=2024-06-05",
     "deploy": "npx @opennextjs/cloudflare build && npx @opennextjs/cloudflare deploy",
     "start": "npx wrangler pages dev .vercel/output/static --compatibility-date=2024-06-05 --persist-to=./.wrangler/state/v3"
-  },
+},
   "dependencies": {
     "next": "15.0.3",
     "react": "18.3.1",
