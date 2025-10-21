@@ -2,11 +2,11 @@
   "name": "linkedin-dashboard-cloudflare",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "npx @cloudflare/next-on-pages@1",
+    "scripts": {
+    "dev": "next dev", 
+    "build": "npx @cloudflare/next-on-pages@1", 
     "start": "npx wrangler pages dev .vercel/output/static --compatibility-date=2024-06-05 --persist-to=./.wrangler/state/v3"
-  },
+  }
   "dependencies": {
     "next": "15.0.3",
     "react": "18.3.1",
