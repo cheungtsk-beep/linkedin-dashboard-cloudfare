@@ -1,20 +1,22 @@
-# Cloudflare Pages - Next.js (Next-on-Pages) - LinkedIn Dashboard
+# LinkedIn Dashboard – Cloudflare Pages
 
-## Deploy with Cloudflare Pages (recommended)
-1) Create a new project at https://dash.cloudflare.com → Pages → "Create a project" → "Connect to Git".
-2) Push this folder to a new GitHub repo and connect it.
-3) Build settings:
-   - Framework preset: **Next.js**
-   - Build command: **npm run build**
-   - Build output directory: **.vercel/output/static**
-4) Environment variables (Project Settings → Environment Variables):
-   - LINKEDIN_CLIENT_ID
-   - LINKEDIN_CLIENT_SECRET
-5) After deploy, open `/dashboard`.
+This project is a performance dashboard for tracking LinkedIn posts, built with Next.js 15 and deployed on Cloudflare using the OpenNext adapter.
 
-## Local preview (optional)
-- `npm install`
-- `npm run dev` (Next dev server)
-- `npm run build` then `npm start` (Pages dev against the built output)
+## Setup
 
-This project includes API route stubs at /api/linkedin/* that are compatible with Cloudflare's Edge runtime via next-on-pages.
+1. Clone the repo  
+2. Install dependencies: `npm install`  
+3. Develop locally: `npm run dev`  
+4. Build for production: `npm run build`  
+5. Deploy: `npm run deploy` (or via GitHub & Cloudflare Pages)  
+
+## Environment Variables
+
+- `LINKEDIN_CLIENT_ID`  
+- `LINKEDIN_CLIENT_SECRET`  
+
+Set these in Cloudflare Pages → Settings → Environment Variables.
+
+## Deploying
+
+This repo is connected to GitHub → Cloudflare Pages. Commits to the `main` branch trigger automatic builds and deploys.
